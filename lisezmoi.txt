@@ -1,0 +1,29 @@
+Kamal Ait Omar
+
+1- j'ai d'abord lu le document html et j'ai compris sa structure.
+
+2- Pour ça j'ai créé une fonction nommée 'createCible', qui crée une seule cible en tant qu'élément div en utilisant la fonction 'createElement' 
+et je lui donne un identifiant et une classe en utilisant la fonction 'setAttribute'.
+
+ - Pour supprimer une cible j'ai créé une fonction avec 'addEventListener' 'click'.
+cette fonction vérifie si l'élément cliqué est une cible ou non, et quand c'est le cas, nous mettons à jour la zone remaining et nous donnons à la cible cliquée 
+la classe "hit" et enfin nous la supprimons avec une animation d'une seconde en utilisant la fonction 'setTimeOut'.
+
+3- Tout d'abord j'ai créé une fonction nommée "chrono" et cette fonction gère le temps (dixième, secondes, minutes).
+après, j'ai créé une fonction nommée "startGame" qui appelait la fonction Précédente "chrono" en utilisant la fonction 'setInterval', et on afect la fonction
+"startGame" sur le bouton Démarer.
+
+4- Dans la même fonction "startGame" j'ai utilisé une boucle "for" pour appeler la fonction "createCible" plusieurs fois, et j'obtiens le nombre de répétitions 
+de la zone "nbtargets.value"
+
+ - Pour détecter la fin du jeu j'ai utilisé la fonction "chronomètre" qui s'exécute tous les dixièmes, donc j'ai vérifié s'il y a une cible dans le champ tous 
+les dixièmes.
+et quand il n'y a pas de cible la fonction arrête le chrono et elle clacule le score et l'alerte.
+
+5- pour terminer le projet, j'ai ajouté plusieurs niveaux au jeu.
+   _J'ai donc crée quatre boutons pour sélectionner le niveau auquel vous voulez jouer et j'ai donné à chacun d'entre eux une fonction:
+   _le premier bouton pour l'état normal du jeu.
+   _le deuxième augmente la largeur de la zone et diminue la hauteur et la largeur des cibles.
+   _le troisième augmente à nouveau la largeur de la zone.
+   _le quatrième augmente la largeur de la zone pour la troisième fois et diminue la hauteur et la largeur des cibles pour la deuxième fois.
+
